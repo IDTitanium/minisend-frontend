@@ -33,6 +33,12 @@ export default {
           path: "/dashboard",
           showInSidebar: true,
         },
+        {
+          icon: "archive",
+          title: "All Emails",
+          path: "/emails",
+          showInSidebar: true,
+        },
       ];
     },
   },

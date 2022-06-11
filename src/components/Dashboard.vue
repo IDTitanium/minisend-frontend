@@ -6,19 +6,19 @@
           <v-col>
              <v-card outlined max-width="20rem" style="background: green; color: white">
             <v-card-text class="text-center card-text" style="color:white">Total Email Sent: </v-card-text> 
-            <h2 class="p-5 text-center">20000</h2>
+            <h2 class="p-5 text-center">{{stats.countSent | thousandSeperator}}</h2>
             </v-card> 
           </v-col>
           <v-col>
              <v-card outlined max-width="20rem" style="background: blueviolet; color: white">
             <v-card-text class="text-center card-text" style="color:white">Total Email Posted: </v-card-text> 
-            <h2 class="p-5 text-center">20000</h2>
+            <h2 class="p-5 text-center">{{stats.countPosted | thousandSeperator}}</h2>
             </v-card> 
           </v-col>
         <v-col>
             <v-card outlined max-width="20rem" style="background: orange; color: white">
             <v-card-text class="text-center card-text" style="color:white">Total Email Failed: </v-card-text> 
-            <h2 class="p-5 text-center">20000</h2>
+            <h2 class="p-5 text-center">{{stats.countFailed | thousandSeperator}}</h2>
             </v-card> 
         </v-col>
       </v-row>

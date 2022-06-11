@@ -3,6 +3,7 @@ import Router from "vue-router";
 
 const Dashboard = () => import("./components/Dashboard.vue");
 const Home = () => import("./components/Home.vue");
+const EmailList = () => import("./components/EmailList.vue");
 
 Vue.use(Router);
 
@@ -26,6 +27,14 @@ const router = new Router({
         title: "Home",
       },
     },
+    {
+      path: "/emails",
+      name: "emails",
+      component: EmailList,
+      meta: {
+        title: "Emails",
+      },
+    }
   ],
 });
 
